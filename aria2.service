@@ -4,7 +4,7 @@ Description=aria2
 [Service]
 Type=simple
 User=yuhuang
-ExecStart=$bin/aria2c --conf-path=$opt_prefix/aria2.conf --input-file=$opt_prefix/aria2.session
+ExecStart=$bin/aria2c --conf-path=$pkgshare/aria2.conf --input-file=$pkgshare/aria2.session --save-session=$pkgshare/aria2.session
 Restart=on-failure
 
 [Install]
