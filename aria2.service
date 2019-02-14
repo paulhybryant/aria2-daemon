@@ -3,6 +3,7 @@ Description=aria2
 
 [Service]
 Type=simple
+User=$user
 ExecStart=$bin/aria2c --conf-path=$pkgshare/aria2.conf --input-file=$pkgshare/aria2.session --save-session=$pkgshare/aria2.session
 Restart=on-failure
 
